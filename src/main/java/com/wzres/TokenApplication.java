@@ -5,14 +5,14 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * @ClassName：UserApplication
+ * @ClassName：TokenApplication
  * @description：
- * @date：2023-04-09 03:59
+ * @date：2023-05-13 09:47
  */
 @SpringBootApplication
 @MapperScan("com.wzres.mapper")
-public class UserApplication {
+public class TokenApplication {
     public static void main(String[] args) {
-        SpringApplication.run(UserApplication.class,args);
+        SpringApplication.run(TokenApplication.class, args);
     }
 }

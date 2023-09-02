@@ -1,13 +1,12 @@
 package com.wzres.mapper;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.wzres.domain.User;
 
-import java.util.List;
-
 /**
- * @ClassName：UserMapper
- * @description：
- * @date：2023-04-09 04:14
+ * @ClassName UserMapper
+ * @date 2023-08-18 17:10
  */
-public interface UserMapper {
+public interface UserMapper extends BaseMapper<User>{
+
 }
