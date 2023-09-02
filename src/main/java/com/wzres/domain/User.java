@@ -3,18 +3,22 @@ package com.wzres.domain;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
+
+import java.io.Serializable;
 
 /**
- * @ClassName：User
- * @description：
- * @date：2023-04-09 04:06
+ * @ClassName User
+ * @date 2023-06-22 17:58
  */
+
 @Data
-@NoArgsConstructor
+@Accessors(chain = true) //支持set&get的函数式编程
 @AllArgsConstructor
-public class User {
-    private Integer id;
-    private String username;
-    private Integer age;
-    private String address;
+@NoArgsConstructor
+public class User implements Serializable {
+    String id;
+    String username;
+    Integer age;
+    String address;
 }
